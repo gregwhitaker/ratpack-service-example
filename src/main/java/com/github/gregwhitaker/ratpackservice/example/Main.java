@@ -3,6 +3,8 @@ package com.github.gregwhitaker.ratpackservice.example;
 import com.github.gregwhitaker.ratpackservice.example.config.ExampleServiceConfig;
 import com.github.gregwhitaker.ratpackservice.example.services.ServicesModule;
 import ratpack.guice.Guice;
+import ratpack.handling.Context;
+import ratpack.handling.Handler;
 import ratpack.server.BaseDir;
 import ratpack.server.RatpackServer;
 
@@ -19,6 +21,9 @@ public class Main {
                         .baseDir(BaseDir.find()).build())
                 .registry(Guice.registry(b -> b
                         .module(ServicesModule.class)))
+                .handlers(chain -> chain.get((Handler) ctx -> {
+                    ctx.render("Hello World!");
+                }))
         );
     }
 }

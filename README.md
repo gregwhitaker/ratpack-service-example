@@ -22,6 +22,8 @@ Once the application is running you should see something similar to the followin
     [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513622304
     [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513623308
 
+Point your web browser to [http://localhost:5050](http://localhost:5050) to access the test endpoint.
+
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/ratpack-service-example/issues).
 
