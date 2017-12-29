@@ -1,0 +1,3 @@
+services:
+  example:
+    message: "Hello from the ExampleService!"
