@@ -1,12 +1,26 @@
 # ratpack-service-example
 [![Build Status](https://travis-ci.org/gregwhitaker/ratpack-service-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-service-example)
-
 An example showing how to start long-running services on application startup with [Ratpack](http://www.ratpack.io).
+
+This example starts a long-running service in the background on Ratpack startup. The service prints the message configured in config.yaml to standard out once per second.
 
 ## Running the Example
 Start the example by running the following Gradle command:
 
     $ ./gradlew run
+    
+Once the application is running you should see something similar to the following in your console:
+
+    [main] INFO ratpack.server.RatpackServer - Starting server...
+    [main] INFO ratpack.server.RatpackServer - Building registry...
+    [main] INFO ratpack.server.RatpackServer - Initializing 1 services...
+    [ratpack-compute-1-1] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Starting ExampleService
+    [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513619293
+    [main] INFO ratpack.server.RatpackServer - Ratpack started for http://localhost:5050
+    [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513620298
+    [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513621301
+    [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513622304
+    [Timer-0] INFO com.github.gregwhitaker.ratpackservice.example.services.ExampleService - Hello from the ExampleService! - 1514513623308
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/ratpack-service-example/issues).
