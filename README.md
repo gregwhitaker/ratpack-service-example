@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/gregwhitaker/ratpack-service-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-service-example)
 An example showing how to start long-running services on application startup with [Ratpack](http://www.ratpack.io).
 
-This example starts a long-running service in the background on Ratpack application startup that prints the message configured in `config.yaml` to the console.
+This example starts a long-running service in the background, on Ratpack application startup, that prints the message configured in `config.yaml` to the console.
 
 ## Running the Example
 Start the example by running the following Gradle command:
