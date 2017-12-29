@@ -1,4 +1,6 @@
 # ratpack-service-example
+[![Build Status](https://travis-ci.org/gregwhitaker/ratpack-service-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-service-example)
+
 An example showing how to start long-running services on application startup with [Ratpack](http://www.ratpack.io).
 
 ## Running the Example
